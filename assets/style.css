@@ -489,3 +489,23 @@ footer.site .copyright {
 @media (min-width: 1000px) {
   .hero-copy h1 { font-size: 48px; }
 }
+
+/* ---------- FAQ ---------- */
+.faq { max-width: 720px; margin: 0 auto; display: grid; gap: var(--sp-md); }
+.faq details {
+  background: var(--bg-secondary);
+  border-radius: var(--radius-card);
+  padding: var(--sp-lg) var(--sp-xl);
+}
+.faq summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--text-primary);
+}
+.faq details p {
+  margin: var(--sp-md) 0 0;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--text-secondary);
+}

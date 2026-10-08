@@ -1,0 +1,24 @@
+# Barnið
+
+> Barnið is an Icelandic-first baby tracker app for iPhone. Parents log a baby's sleep, breastfeeding and bottle feeds, diaper changes, medicine, vitamins and appointments, and share the log with the other parent in real time. Free to download on the App Store, with an optional Premium subscription (free trial). Android is in development and not yet available.
+
+Key facts:
+- Platform: iPhone (iOS), App Store. Android: in development, not available.
+- Languages: Icelandic and English.
+- Price: free to download; optional Barnið Premium subscription (monthly or annual, with a free trial) adds appointments, Sleep Time predictions, extra guardians and babies, and medicine reminders.
+- Sharing: both parents see the same log in real time via an invite code; works offline and syncs when back online.
+- Privacy: data stored on servers in Ireland (EEA); never sold; no ads; account and data deletable in Settings.
+- Publisher: Eggert Már. Contact: info@eggertmar.com
+
+## Pages
+- [Barnið (Icelandic)](https://barnid.eggertmar.com/): Icelandic landing page with features and FAQ
+- [Barnið (English)](https://barnid.eggertmar.com/en.html): English landing page with features and FAQ
+- [Privacy policy](https://barnid.eggertmar.com/privacy-policy.html): what data is collected and how it is handled
+- [Terms of service](https://barnid.eggertmar.com/terms-of-service.html): terms of use and subscriptions
+- [Support](https://barnid.eggertmar.com/support.html): contact and help
+
+## Download
+- [Barnið on the App Store](https://apps.apple.com/app/id6806393802)
+
+## Optional
+- [Full product description for LLMs](https://barnid.eggertmar.com/llms-full.txt)

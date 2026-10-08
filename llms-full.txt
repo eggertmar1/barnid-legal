@@ -1,0 +1,79 @@
+# Barnið – full description
+
+Barnið is an Icelandic-first baby tracker app for iPhone, published by Eggert Már. Download: https://apps.apple.com/app/id6806393802
+Website: https://barnid.eggertmar.com/ (Icelandic), https://barnid.eggertmar.com/en.html (English). Support: info@eggertmar.com
+
+## What it does
+- Logs sleep, breastfeeding (remembers which side was used last), bottle feeds, pumping, diaper changes, medicine, vitamins and appointments.
+- Shares the log between parents and guardians in real time using an invite code.
+- Sleep Time (Premium): predicts the best time for the next nap from the baby's own sleep pattern.
+- Medicine and vitamins: tick off daily vitamins, log medicine including as-needed doses and courses, include them in a report for the doctor. The app only records what the user enters; it never calculates doses.
+- Lock Screen and Dynamic Island sleep timer.
+- Works offline; entries sync when the phone is back online.
+
+## Pricing
+Free to download. Optional Barnið Premium subscription (monthly or annual, with a free trial) adds appointments, Sleep Time predictions, extra guardians and babies, and medicine reminders. Current prices are shown in the App Store.
+
+## Availability
+iPhone only, via the App Store. Android is in development and not yet available.
+
+## Privacy
+Data is stored on servers in Ireland (inside the EEA) and on users' phones. Data is not sold and the app has no ads. Analytics are anonymous and contain no personal content. Users can delete their account and data in Settings. Details: https://barnid.eggertmar.com/privacy-policy.html
+
+## FAQ (English)
+
+### What is Barnið?
+Barnið is an Icelandic-first iPhone app that helps parents log a baby's sleep, breastfeeding and bottle feeds, diaper changes, medicine, vitamins and appointments, and share the log with the other parent in real time.
+
+### Is Barnið free?
+Barnið is free to download from the App Store and to log your baby's daily routines. Barnið Premium is an optional subscription with a free trial that adds appointments, Sleep Time predictions, extra guardians and babies, and medicine reminders.
+
+### Can both parents use Barnið together?
+Yes. You invite the other parent with an invite code, and you both see the same log for the same baby in real time, even when one of you is away from home. A third guardian requires Premium.
+
+### Does Barnið work offline?
+Yes. Entries are saved on your phone when there is no connection, and they sync with the other parent when your phone is back online.
+
+### Where is the data stored, and is it private?
+Data is stored on servers in Ireland (inside the EEA) and on the phones of everyone who shares the baby. It is never sold and the app has no ads. You can delete your account and data at any time in Settings. See the privacy policy for details.
+
+### Can I track medicine and vitamins for a baby?
+Yes. You can tick off vitamin D and fish oil each day and see who gave it and when, and log medicine, including as-needed doses and courses. The app only records what you enter and never calculates doses.
+
+### What is Sleep Time in Barnið?
+Sleep Time is a prediction Barnið calculates from your baby's own sleep pattern, suggesting the best time for the next nap before the baby gets overtired. It is part of Barnið Premium and is guidance, not medical advice.
+
+### What can I log with Barnið?
+Sleep, breastfeeding (the app remembers which side you used last), bottle feeds, pumping, diaper changes, medicine, vitamins and appointments such as well-baby checkups. You can also follow a sleep timer on the Lock Screen and in the Dynamic Island.
+
+### Is Barnið available for Android?
+Not yet. Barnið is currently available only for iPhone on the App Store. An Android version is in development.
+
+## Algengar spurningar (Icelandic)
+
+### Hvað er Barnið?
+Barnið er íslenskt app fyrir iPhone sem hjálpar foreldrum að skrá svefn, brjóstagjöf og pelagjöf, bleyjuskipti, lyf, vítamín og tímabókanir ungbarns og deila skráningunni með hinu foreldrinu í rauntíma.
+
+### Er Barnið ókeypis?
+Það er ókeypis að hlaða Barninu niður úr App Store og skrá daglegar venjur barnsins. Barnið Premium er valfrjáls áskrift með fría prufu sem bætir við tímabókunum, Svefntíma-spá, fleiri forráðamönnum og börnum og áminningum um lyf.
+
+### Geta báðir foreldrar notað appið saman?
+Já. Þú býður hinu foreldrinu með boðskóða og þið sjáið sömu skráningu á sama barni í rauntíma, líka þegar annað ykkar er að heiman. Þriðji forráðamaðurinn krefst Premium.
+
+### Virkar Barnið án nettengingar?
+Já. Skráningar vistast á símanum þótt engin nettenging sé til staðar og samstillast við hitt foreldrið þegar síminn tengist netinu aftur.
+
+### Hvar eru gögnin geymd og eru þau persónuleg?
+Gögnin eru geymd á netþjónum á Írlandi (innan EES) og í símum þeirra sem deila barninu. Þau eru aldrei seld og engar auglýsingar eru í appinu. Þú getur eytt aðgangi og gögnum hvenær sem er í Stillingum. Nánar í persónuverndarstefnunni.
+
+### Get ég skráð lyf og vítamín ungbarna?
+Já. Þú getur hakað við D-vítamín og lýsi á hverjum degi og séð hver gaf og hvenær, og skráð lyf, líka eftir þörfum og í kúrum. Appið skráir bara það sem þú slærð inn og reiknar aldrei út skammta.
+
+### Hvað er Svefntími í Barninu?
+Svefntími er spá sem Barnið reiknar út frá svefnmynstri barnsins og stingur upp á besta tímanum fyrir næsta lúr, áður en barnið verður ofþreytt. Hún er hluti af Barnið Premium og er fyrst og fremst leiðbeining, ekki læknisráð.
+
+### Hvaða venjur get ég skráð með Barninu?
+Svefn, brjóstagjöf (appið man hvora hliðina þú notaðir síðast), pelagjöf, mjólkurpumpun, bleyjuskipti, lyf, vítamín og tímabókanir eins og ungbarnaskoðun. Svefn má líka fylgjast með á lásskjánum og í Dynamic Island.
+
+### Er Barnið til fyrir Android?
+Ekki enn. Barnið er eins og stendur aðeins til fyrir iPhone í App Store. Android-útgáfa er í þróun.
