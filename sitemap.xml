@@ -18,17 +18,33 @@
   </url>
   <url>
     <loc>https://barnid.eggertmar.com/privacy-policy.html</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://barnid.eggertmar.com/terms-of-service.html</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://barnid.eggertmar.com/support.html</loc>
     <lastmod>2026-10-08</lastmod>
     <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://barnid.eggertmar.com/privacy-policy-is.html</loc>
+    <lastmod>2026-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://barnid.eggertmar.com/privacy-policy-nb.html</loc>
+    <lastmod>2026-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://barnid.eggertmar.com/terms-of-service-is.html</loc>
+    <lastmod>2026-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://barnid.eggertmar.com/terms-of-service-nb.html</loc>
+    <lastmod>2026-10-15</lastmod>
   </url>
 </urlset>
