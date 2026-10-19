@@ -29,7 +29,7 @@
 <body>
 <p class="lang"><strong aria-current="page" lang="en">English</strong> · <a href="privacy-policy-is.html" hreflang="is" lang="is">Íslenska</a> · <a href="privacy-policy-nb.html" hreflang="nb" lang="nb">Norsk (bokmål)</a></p>
 <h1>Privacy Policy</h1>
-<p class="updated">Last updated: 16 October 2026</p>
+<p class="updated">Last updated: 19 October 2026</p>
 
 <p>This policy explains what information Barnið ("the app") collects, why, where it goes, how long it's kept and what your rights are. Barnið is a baby-tracking app that helps parents and other caregivers log and share a baby's sleep, feeds, nappy changes, appointments, and the medicines and vitamins they're given.</p>
 
@@ -37,7 +37,7 @@
 <ul>
   <li>Barnið stores health information about your child (and, if you use "Not born yet", about the pregnancy). We only do that with your explicit consent, which you can withdraw in Settings.</li>
   <li>Your child's records are shared with the other guardians you invite, and no one else. They're never used for advertising and never sold.</li>
-  <li>The data is stored on servers in Ireland (EU).</li>
+  <li>The data is stored on servers in Ireland (EU), with encrypted backups in the EU.</li>
   <li>We use anonymous product analytics that never include names, notes, dates or medicine details.</li>
   <li>You can delete your account and data in the app at any time.</li>
 </ul>
@@ -150,12 +150,13 @@
 <table>
   <tr><th>Provider</th><th>What for</th><th>Data</th><th>Where</th></tr>
   <tr><td>Supabase (Supabase Pte. Ltd.)</td><td>Database, sign-in, photo storage, live sync, server functions</td><td>Everything stored on our servers, including health information and photos, and technical logs</td><td>Stored in Ireland, EU (Amazon Web Services, eu-west-1)</td></tr>
+  <tr><td>Cloudflare (Cloudflare, Inc.)</td><td>Stores our backups (Cloudflare R2)</td><td>Encrypted copies of the database. Cloudflare can't read them: only we hold the key</td><td>EU</td></tr>
   <tr><td>Aptabase (Technov Solutions SRL)</td><td>Usage analytics</td><td>The analytics events and device details described above; nothing linked to your account</td><td>EU</td></tr>
   <tr><td>Apple (iCloud Mail)</td><td>Our email (info@eggertmar.com)</td><td>Emails you send us</td><td>Apple's data centres, which may be outside the EEA, including the United States</td></tr>
   <tr><td>Vercel Inc.</td><td>Hosts our website, barnid.eggertmar.com</td><td>Only what any website receives from visitors, such as your IP address. No data from the app</td><td>United States and Vercel's worldwide network</td></tr>
   <tr><td>GitHub, Inc.</td><td>Hosts these pages (GitHub Pages)</td><td>Only what any website receives from visitors, such as your IP address. No data from the app</td><td>United States</td></tr>
 </table>
-<p>Supabase processes data for us under its Data Processing Addendum, which is part of Supabase's terms of service.</p>
+<p>Supabase processes data for us under its Data Processing Addendum, which is part of Supabase's terms of service. Cloudflare does so under its Data Processing Addendum, which is part of Cloudflare's terms.</p>
 
 <h3>Companies that act on their own account</h3>
 <ul>
@@ -166,7 +167,7 @@
 
 <h2>Transfers outside the EEA</h2>
 <p>Our database, sign-in and photos are stored in Ireland. Supabase is based outside the European Economic Area (EEA), in Singapore and the United States, and its staff may access data from outside the EEA to support the service. Those transfers are covered by the European Commission's standard contractual clauses, which are part of Supabase's Data Processing Addendum.</p>
-<p>Vercel, which hosts our website, and GitHub, which hosts these pages, are in the United States. Both are certified under the EU-U.S. Data Privacy Framework. Apple may store our email outside the EEA, including in the United States, and uses the European Commission's standard contractual clauses for those transfers. You can ask us for a copy of the safeguards.</p>
+<p>Vercel, which hosts our website, and GitHub, which hosts these pages, are in the United States. Both are certified under the EU-U.S. Data Privacy Framework. Cloudflare, which stores our encrypted backups in the EU, is a US company certified under the same framework; it can't read the backups, because only we hold the key. Apple may store our email outside the EEA, including in the United States, and uses the European Commission's standard contractual clauses for those transfers. You can ask us for a copy of the safeguards.</p>
 
 <h2>How long we keep it, and deletion</h2>
 <p>This is what happens today. Where we haven't finished building automatic deletion yet, we say so, and we say what we're working towards. When that changes, we'll update this policy. Deletions that happen after a set time are made by a job that runs once a day, so they can take up to a day longer than stated here.</p>
@@ -178,7 +179,7 @@
 <li><strong>Deleting a baby</strong> removes it from the app on every guardian's phone. On our servers the baby and all its records are kept unchanged for 30 days and then permanently deleted, with its photo. A baby that no guardian has access to any more is permanently deleted in the same way, 30 days after it last changed. If you want a baby removed sooner, email us and we'll do it.</li>
 <li><strong>Removing a pregnancy</strong> permanently deletes the baby that's "Not born yet" and everything recorded for it, including appointments and contraction timings, from our servers at once, and any photo within a day. If you remove it in a version of the app older than 1.4.0, it's deleted 30 days later, like a deleted baby.</li>
 <li><strong>Deletion markers:</strong> when we permanently delete a baby or an entry, we keep a marker so that an old copy on a phone that has been offline can't put it back. A marker holds only a random ID number, the kind of record and when it was deleted, nothing you entered. Markers for a baby's entries are deleted with the baby; the marker for a deleted baby is kept.</li>
-  <li><strong>Backups:</strong> we don't currently keep backups of the database. Deleted data doesn't linger in backups, but it also means we can't restore data lost to a technical failure.</li>
+  <li><strong>Backups:</strong> so we can recover from a technical failure, we back up the database every 30 minutes. Each backup is made on a computer we run ourselves in Iceland, encrypted there with a key only we hold, and stored with Cloudflare in the EU. Each backup is deleted automatically after at most 30 days, so anything deleted from our servers, whether you deleted it or it was deleted under the rules above, is gone from the backups no more than 30 days later. Photos aren't backed up. We use backups only to recover from a failure and to test that recovery works.</li>
   <li><strong>Invite codes</strong> are valid for 24 hours. A code is deleted 7 days after it expires or is used, or earlier if the baby is deleted or the guardian who created it deletes their account.</li>
   <li><strong>Your consent record</strong> is kept while your account exists and is deleted with it.</li>
   <li><strong>Technical logs</strong> of requests to our servers are deleted automatically by Supabase, never later than 90 days after they're made.</li>
@@ -205,7 +206,7 @@
 <p>You also have the right to complain to the Icelandic Data Protection Authority, <strong>Persónuvernd</strong>: Laugavegur 166, 105 Reykjavík, Iceland; <a href="mailto:postur@personuvernd.is">postur@personuvernd.is</a>; phone +354 510 9600; <a href="https://www.personuvernd.is">www.personuvernd.is</a>. If you live elsewhere in the EEA, you can also complain to your local authority. We'd appreciate the chance to sort things out with you first.</p>
 
 <h2>Security</h2>
-<p>All connections between the app and our servers are encrypted (HTTPS). Data on our servers is encrypted at rest by our hosting provider. Access rules in the database let each account read and change only the babies it's a guardian of. On your phone, the app's data is protected by iOS data protection when your phone is locked. If a personal data breach happens that's likely to put you at risk, we'll tell Persónuvernd within 72 hours of finding out and, where the risk is high, tell you.</p>
+<p>All connections between the app and our servers are encrypted (HTTPS). Data on our servers is encrypted at rest by our hosting provider. Backups are encrypted before they're stored, with a key only we hold. Access rules in the database let each account read and change only the babies it's a guardian of. On your phone, the app's data is protected by iOS data protection when your phone is locked. If a personal data breach happens that's likely to put you at risk, we'll tell Persónuvernd within 72 hours of finding out and, where the risk is high, tell you.</p>
 
 <h2>Children's privacy</h2>
 <p>Barnið isn't directed at children and isn't meant to be used by them. It's a tool for adults to record care information about a child in their care, and information about the child is entered and controlled by the child's guardians. We don't knowingly collect information directly from children.</p>

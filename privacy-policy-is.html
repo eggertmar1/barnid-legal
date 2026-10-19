@@ -29,7 +29,7 @@
 <body>
 <p class="lang"><a href="privacy-policy.html" hreflang="en" lang="en">English</a> · <strong aria-current="page" lang="is">Íslenska</strong> · <a href="privacy-policy-nb.html" hreflang="nb" lang="nb">Norsk (bokmål)</a></p>
 <h1>Persónuverndarstefna</h1>
-<p class="updated">Síðast uppfært: 16. október 2026</p>
+<p class="updated">Síðast uppfært: 19. október 2026</p>
 
 <p>Þessi stefna útskýrir hvaða upplýsingum Barnið („appið“) safnar, hvers vegna, hvert þær fara, hve lengi þær eru geymdar og hver réttindi þín eru. Barnið er app sem hjálpar foreldrum og öðrum umönnunaraðilum að skrá og deila svefni barns, gjöfum, bleyjuskiptum, tímabókunum og þeim lyfjum og vítamínum sem barnið fær.</p>
 
@@ -37,7 +37,7 @@
 <ul>
   <li>Appið Barnið geymir heilsufarsupplýsingar um barnið þitt (og um meðgönguna ef þú notar „Ekki fætt enn“). Það gerum við aðeins með afdráttarlausu samþykki þínu, sem þú getur afturkallað í Stillingum.</li>
   <li>Skráningum um barnið er deilt með þeim forráðamönnum sem þú býður og engum öðrum. Þær eru aldrei notaðar í auglýsingaskyni og aldrei seldar.</li>
-  <li>Gögnin eru geymd á netþjónum á Írlandi (innan ESB).</li>
+  <li>Gögnin eru geymd á netþjónum á Írlandi (innan ESB) og dulkóðuð afrit af þeim innan ESB.</li>
   <li>Við notum nafnlausar notkunarmælingar sem innihalda aldrei nöfn, athugasemdir, dagsetningar eða upplýsingar um lyf.</li>
   <li>Þú getur eytt aðganginum og gögnunum í appinu hvenær sem er.</li>
 </ul>
@@ -150,12 +150,13 @@
 <table>
   <tr><th>Þjónustuaðili</th><th>Til hvers</th><th>Gögn</th><th>Hvar</th></tr>
   <tr><td>Supabase (Supabase Pte. Ltd.)</td><td>Gagnagrunnur, innskráning, myndageymsla, samstilling í rauntíma, netþjónaföll</td><td>Allt sem geymt er á netþjónunum okkar, líka heilsufarsupplýsingar og myndir, og tæknilegir annálar</td><td>Geymt á Írlandi, innan ESB (Amazon Web Services, eu-west-1)</td></tr>
+  <tr><td>Cloudflare (Cloudflare, Inc.)</td><td>Geymir afritin okkar (Cloudflare R2)</td><td>Dulkóðuð afrit af gagnagrunninum. Cloudflare getur ekki lesið þau: aðeins við höfum lykilinn</td><td>ESB</td></tr>
   <tr><td>Aptabase (Technov Solutions SRL)</td><td>Notkunarmælingar</td><td>Atburðirnir og tækjaupplýsingarnar sem lýst er hér að ofan; ekkert tengt aðganginum þínum</td><td>ESB</td></tr>
   <tr><td>Apple (iCloud Mail)</td><td>Tölvupósturinn okkar (info@eggertmar.com)</td><td>Póstur sem þú sendir okkur</td><td>Gagnaver Apple, sem geta verið utan EES, þar á meðal í Bandaríkjunum</td></tr>
   <tr><td>Vercel Inc.</td><td>Hýsir vefsíðuna okkar, barnid.eggertmar.com</td><td>Aðeins það sem allar vefsíður fá frá gestum, t.d. IP-tölu. Engin gögn úr appinu</td><td>Bandaríkin og alþjóðlegt net Vercel</td></tr>
   <tr><td>GitHub, Inc.</td><td>Hýsir þessar síður (GitHub Pages)</td><td>Aðeins það sem allar vefsíður fá frá gestum, t.d. IP-tölu. Engin gögn úr appinu</td><td>Bandaríkin</td></tr>
 </table>
-<p>Supabase vinnur gögn fyrir okkur samkvæmt vinnslusamningi sínum (Data Processing Addendum), sem er hluti af þjónustuskilmálum Supabase.</p>
+<p>Supabase vinnur gögn fyrir okkur samkvæmt vinnslusamningi sínum (Data Processing Addendum), sem er hluti af þjónustuskilmálum Supabase. Cloudflare gerir það samkvæmt vinnslusamningi sínum (Data Processing Addendum), sem er hluti af skilmálum Cloudflare.</p>
 
 <h3>Fyrirtæki sem starfa á eigin vegum</h3>
 <ul>
@@ -166,7 +167,7 @@
 
 <h2>Flutningur út fyrir EES</h2>
 <p>Gagnagrunnurinn, innskráningin og myndirnar eru geymd á Írlandi. Supabase er með aðsetur utan Evrópska efnahagssvæðisins (EES), í Singapúr og Bandaríkjunum, og starfsfólk þess kann að fá aðgang að gögnum utan EES til að þjónusta kerfið. Um þann flutning gilda stöðluð samningsákvæði framkvæmdastjórnar ESB, sem eru hluti af vinnslusamningi Supabase.</p>
-<p>Vercel, sem hýsir vefsíðuna okkar, og GitHub, sem hýsir þessar síður, eru í Bandaríkjunum. Bæði fyrirtækin eru vottuð samkvæmt gagnaverndarramma ESB og Bandaríkjanna (EU-U.S. Data Privacy Framework). Apple kann að geyma tölvupóstinn okkar utan EES, þar á meðal í Bandaríkjunum, og notar stöðluð samningsákvæði framkvæmdastjórnar ESB um þann flutning. Þú getur beðið okkur um afrit af verndarráðstöfununum.</p>
+<p>Vercel, sem hýsir vefsíðuna okkar, og GitHub, sem hýsir þessar síður, eru í Bandaríkjunum. Bæði fyrirtækin eru vottuð samkvæmt gagnaverndarramma ESB og Bandaríkjanna (EU-U.S. Data Privacy Framework). Cloudflare, sem geymir dulkóðuð afrit okkar innan ESB, er bandarískt fyrirtæki sem er vottað samkvæmt sama ramma; það getur ekki lesið afritin, því aðeins við höfum lykilinn. Apple kann að geyma tölvupóstinn okkar utan EES, þar á meðal í Bandaríkjunum, og notar stöðluð samningsákvæði framkvæmdastjórnar ESB um þann flutning. Þú getur beðið okkur um afrit af verndarráðstöfununum.</p>
 
 <h2>Hve lengi gögnin eru geymd, og eyðing</h2>
 <p>Svona er staðan í dag. Þar sem við höfum ekki lokið við sjálfvirka eyðingu segjum við það, og hvað við stefnum að. Þegar það breytist uppfærum við stefnuna. Eyðingar sem eiga að gerast eftir ákveðinn tíma eru framkvæmdar af verki sem keyrir einu sinni á sólarhring og geta því tekið allt að sólarhring lengur en hér segir.</p>
@@ -178,7 +179,7 @@
 <li><strong>Ef þú eyðir barni</strong> hverfur það úr appinu í símum allra forráðamanna. Á netþjónunum eru barnið og allar skráningar þess geymd óbreytt í 30 daga og síðan eytt varanlega, ásamt myndinni. Barni sem enginn forráðamaður hefur lengur aðgang að er eytt varanlega á sama hátt, 30 dögum eftir síðustu breytingu á því. Ef þú vilt að barni verði eytt fyrr skaltu senda okkur póst og við gerum það.</li>
 <li><strong>Ef þú fjarlægir meðgöngu</strong> er barninu sem er „Ekki fætt enn“ og öllu sem skráð var fyrir það, líka tímabókunum og tímasetningum hríða, eytt varanlega af netþjónunum strax, og mynd, ef hún er til, innan sólarhrings. Ef þú fjarlægir hana í útgáfu af appinu sem er eldri en 1.4.0 er henni eytt 30 dögum síðar, eins og barni sem er eytt.</li>
 <li><strong>Eyðingarmerki:</strong> þegar við eyðum barni eða skráningu varanlega geymum við merki svo að gamalt afrit í síma sem hefur verið án nettengingar geti ekki sett það inn aftur. Merkið inniheldur aðeins handahófskennt auðkennisnúmer, tegund færslunnar og hvenær henni var eytt, ekkert sem þú skráðir. Merkjum fyrir skráningar barns er eytt með barninu; merkið fyrir barn sem hefur verið eytt er geymt áfram.</li>
-  <li><strong>Afrit:</strong> við tökum ekki afrit af gagnagrunninum eins og er. Eyddar upplýsingar sitja því ekki eftir í afritum, en það þýðir líka að við getum ekki endurheimt gögn sem tapast vegna tæknilegrar bilunar.</li>
+  <li><strong>Afrit:</strong> til að geta brugðist við tæknilegri bilun tökum við afrit af gagnagrunninum á 30 mínútna fresti. Hvert afrit er gert á tölvu sem við rekum sjálf á Íslandi, dulkóðað þar með lykli sem aðeins við höfum og geymt hjá Cloudflare innan ESB. Hverju afriti er eytt sjálfkrafa í síðasta lagi eftir 30 daga, svo það sem er eytt af netþjónunum okkar, hvort sem þú eyddir því eða því var eytt samkvæmt reglunum hér að ofan, er horfið úr afritunum í síðasta lagi 30 dögum síðar. Ekki eru tekin afrit af myndum. Við notum afritin aðeins til að endurheimta gögn eftir bilun og til að prófa að endurheimtin virki.</li>
   <li><strong>Boðskóðar</strong> gilda í sólarhring. Kóða er eytt 7 dögum eftir að hann rennur út eða er notaður, eða fyrr ef barninu er eytt eða forráðamaðurinn sem bjó hann til eyðir aðganginum sínum.</li>
   <li><strong>Skráning samþykkis þíns</strong> er geymd á meðan aðgangurinn er til og eytt með honum.</li>
   <li><strong>Tæknilegum annálum</strong> yfir beiðnir til netþjónanna er eytt sjálfkrafa hjá Supabase, aldrei síðar en 90 dögum eftir að þeir verða til.</li>
@@ -205,7 +206,7 @@
 <p>Þú átt líka rétt á að kvarta til <strong>Persónuverndar</strong>: Laugavegi 166, 105 Reykjavík; <a href="mailto:postur@personuvernd.is">postur@personuvernd.is</a>; sími 510 9600; <a href="https://www.personuvernd.is">www.personuvernd.is</a>. Ef þú býrð annars staðar á EES getur þú líka kvartað til persónuverndarstofnunar þar. Við kunnum að meta að fá tækifæri til að leysa málið með þér fyrst.</p>
 
 <h2>Öryggi</h2>
-<p>Allar tengingar milli appsins og netþjónanna eru dulkóðaðar (HTTPS). Hýsingaraðilinn dulkóðar gögn á netþjónunum okkar. Aðgangsreglur í gagnagrunninum leyfa hverjum aðgangi aðeins að lesa og breyta börnum sem hann er forráðamaður fyrir. Í símanum eru gögn appsins varin með gagnavernd iOS þegar síminn er læstur. Ef öryggisbrestur verður við vinnslu persónuupplýsinga sem líklegt er að skapi hættu fyrir þig tilkynnum við Persónuvernd um hann innan 72 klukkustunda frá því að við verðum hans vör og látum þig vita ef hættan er mikil.</p>
+<p>Allar tengingar milli appsins og netþjónanna eru dulkóðaðar (HTTPS). Hýsingaraðilinn dulkóðar gögn á netþjónunum okkar. Afrit eru dulkóðuð áður en þau eru geymd, með lykli sem aðeins við höfum. Aðgangsreglur í gagnagrunninum leyfa hverjum aðgangi aðeins að lesa og breyta börnum sem hann er forráðamaður fyrir. Í símanum eru gögn appsins varin með gagnavernd iOS þegar síminn er læstur. Ef öryggisbrestur verður við vinnslu persónuupplýsinga sem líklegt er að skapi hættu fyrir þig tilkynnum við Persónuvernd um hann innan 72 klukkustunda frá því að við verðum hans vör og látum þig vita ef hættan er mikil.</p>
 
 <h2>Persónuvernd barna</h2>
 <p>Appið Barnið er hvorki ætlað börnum né til þess fallið að börn noti það. Það er tól fyrir fullorðna til að skrá upplýsingar um umönnun barns í þeirra umsjá, og forráðamenn barnsins skrá upplýsingarnar um það og stjórna þeim. Við söfnum ekki vísvitandi upplýsingum beint frá börnum.</p>

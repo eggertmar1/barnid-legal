@@ -29,7 +29,7 @@
 <body>
 <p class="lang"><a href="privacy-policy.html" hreflang="en" lang="en">English</a> · <a href="privacy-policy-is.html" hreflang="is" lang="is">Íslenska</a> · <strong aria-current="page" lang="nb">Norsk (bokmål)</strong></p>
 <h1>Personvernerklæring</h1>
-<p class="updated">Sist oppdatert: 16. oktober 2026</p>
+<p class="updated">Sist oppdatert: 19. oktober 2026</p>
 
 <p>Denne erklæringen forklarer hvilke opplysninger Barnið («appen») samler inn, hvorfor, hvor de havner, hvor lenge de lagres og hvilke rettigheter du har. Barnið er en app for å følge med på babyen. Den hjelper foreldre og andre omsorgspersoner med å registrere og dele babyens søvn, måltider, bleieskift og avtaler, og hvilke medisiner og vitaminer babyen får.</p>
 
@@ -37,7 +37,7 @@
 <ul>
   <li>Barnið lagrer helseopplysninger om barnet ditt (og om svangerskapet hvis du bruker «Ikke født ennå»). Det gjør vi bare med ditt uttrykkelige samtykke, som du kan trekke tilbake under Innstillinger.</li>
   <li>Opplysningene om barnet ditt deles med de andre omsorgspersonene du inviterer, og ingen andre. De brukes aldri til reklame og selges aldri.</li>
-  <li>Opplysningene lagres på servere i Irland (EU).</li>
+  <li>Opplysningene lagres på servere i Irland (EU), med krypterte sikkerhetskopier i EU.</li>
   <li>Vi bruker anonym bruksanalyse som aldri inneholder navn, notater, datoer eller opplysninger om medisiner.</li>
   <li>Du kan når som helst slette kontoen din og opplysningene dine i appen.</li>
 </ul>
@@ -150,12 +150,13 @@
 <table>
   <tr><th>Leverandør</th><th>Til hva</th><th>Opplysninger</th><th>Hvor</th></tr>
   <tr><td>Supabase (Supabase Pte. Ltd.)</td><td>Database, innlogging, lagring av bilder, direkte synkronisering, serverfunksjoner</td><td>Alt som lagres på serverne våre, også helseopplysninger og bilder, og tekniske logger</td><td>Lagres i Irland, EU (Amazon Web Services, eu-west-1)</td></tr>
+  <tr><td>Cloudflare (Cloudflare, Inc.)</td><td>Lagrer sikkerhetskopiene våre (Cloudflare R2)</td><td>Krypterte kopier av databasen. Cloudflare kan ikke lese dem: bare vi har nøkkelen</td><td>EU</td></tr>
   <tr><td>Aptabase (Technov Solutions SRL)</td><td>Bruksanalyse</td><td>Analysehendelsene og enhetsopplysningene som er beskrevet ovenfor; ingenting som er knyttet til kontoen din</td><td>EU</td></tr>
   <tr><td>Apple (iCloud Mail)</td><td>E-posten vår (info@eggertmar.com)</td><td>E-poster du sender oss</td><td>Apples datasentre, som kan ligge utenfor EØS, blant annet i USA</td></tr>
   <tr><td>Vercel Inc.</td><td>Drifter nettstedet vårt, barnid.eggertmar.com</td><td>Bare det ethvert nettsted mottar fra besøkende, for eksempel IP-adressen din. Ingen opplysninger fra appen</td><td>USA og Vercels verdensomspennende nettverk</td></tr>
   <tr><td>GitHub, Inc.</td><td>Drifter disse sidene (GitHub Pages)</td><td>Bare det ethvert nettsted mottar fra besøkende, for eksempel IP-adressen din. Ingen opplysninger fra appen</td><td>USA</td></tr>
 </table>
-<p>Supabase behandler opplysninger for oss etter sin databehandleravtale (Data Processing Addendum), som er en del av Supabases tjenestevilkår.</p>
+<p>Supabase behandler opplysninger for oss etter sin databehandleravtale (Data Processing Addendum), som er en del av Supabases tjenestevilkår. Cloudflare gjør det etter sin databehandleravtale (Data Processing Addendum), som er en del av Cloudflares vilkår.</p>
 
 <h3>Selskaper som handler på egne vegne</h3>
 <ul>
@@ -166,7 +167,7 @@
 
 <h2>Overføring ut av EØS</h2>
 <p>Databasen, innloggingen og bildene våre lagres i Irland. Supabase holder til utenfor Det europeiske økonomiske samarbeidsområdet (EØS), i Singapore og USA, og ansatte der kan få tilgang til opplysninger fra land utenfor EØS for å yte støtte til tjenesten. Disse overføringene er dekket av EU-kommisjonens standardpersonvernbestemmelser, som er en del av Supabases databehandleravtale.</p>
-<p>Vercel, som drifter nettstedet vårt, og GitHub, som drifter disse sidene, holder til i USA. Begge er sertifisert etter EU–US Data Privacy Framework. Apple kan lagre e-posten vår utenfor EØS, blant annet i USA, og bruker EU-kommisjonens standardpersonvernbestemmelser for disse overføringene. Du kan be oss om en kopi av garantiene.</p>
+<p>Vercel, som drifter nettstedet vårt, og GitHub, som drifter disse sidene, holder til i USA. Begge er sertifisert etter EU–US Data Privacy Framework. Cloudflare, som lagrer de krypterte sikkerhetskopiene våre i EU, er et amerikansk selskap som er sertifisert etter det samme rammeverket; selskapet kan ikke lese sikkerhetskopiene, fordi bare vi har nøkkelen. Apple kan lagre e-posten vår utenfor EØS, blant annet i USA, og bruker EU-kommisjonens standardpersonvernbestemmelser for disse overføringene. Du kan be oss om en kopi av garantiene.</p>
 
 <h2>Hvor lenge vi lagrer opplysningene, og sletting</h2>
 <p>Slik er det i dag. Der vi ennå ikke er ferdige med automatisk sletting, sier vi det, og hva vi arbeider mot. Når det endrer seg, oppdaterer vi denne erklæringen. Slettinger som skal skje etter en fast tid, utføres av en jobb som kjører én gang i døgnet, så de kan ta opptil et døgn lenger enn det som står her.</p>
@@ -178,7 +179,7 @@
 <li><strong>Når du sletter en baby</strong>, fjernes den fra appen på telefonen til alle omsorgspersonene. På serverne våre beholdes babyen og alle registreringene uendret i 30 dager og slettes deretter permanent, sammen med bildet. En baby som ingen omsorgsperson lenger har tilgang til, slettes permanent på samme måte, 30 dager etter at den sist ble endret. Hvis du vil ha en baby slettet tidligere, kan du sende oss en e-post, så gjør vi det.</li>
 <li><strong>Når du fjerner et svangerskap</strong>, slettes babyen som er «Ikke født ennå», og alt som er registrert for den, også avtaler og tidspunkter for rier, permanent fra serverne våre med en gang, og et eventuelt bilde innen et døgn. Fjerner du det i en versjon av appen som er eldre enn 1.4.0, slettes det 30 dager senere, som en slettet baby.</li>
 <li><strong>Slettemerker:</strong> når vi sletter en baby eller en registrering permanent, beholder vi et merke slik at en gammel kopi på en telefon som har vært uten nett, ikke kan legge den inn igjen. Merket inneholder bare et tilfeldig ID-nummer, typen oppføring og når den ble slettet, ingenting du har registrert. Merker for en babys registreringer slettes sammen med babyen; merket for en slettet baby beholdes.</li>
-  <li><strong>Sikkerhetskopier:</strong> vi tar i dag ikke sikkerhetskopier av databasen. Slettede opplysninger blir altså ikke liggende i sikkerhetskopier, men det betyr også at vi ikke kan gjenopprette opplysninger som går tapt ved en teknisk feil.</li>
+  <li><strong>Sikkerhetskopier:</strong> for å kunne gjenopprette etter en teknisk feil tar vi sikkerhetskopi av databasen hvert 30. minutt. Hver sikkerhetskopi lages på en datamaskin vi drifter selv på Island, krypteres der med en nøkkel bare vi har, og lagres hos Cloudflare i EU. Hver sikkerhetskopi slettes automatisk etter høyst 30 dager, så det som slettes fra serverne våre, enten du slettet det eller det ble slettet etter reglene ovenfor, er borte fra sikkerhetskopiene senest 30 dager senere. Bilder sikkerhetskopieres ikke. Vi bruker sikkerhetskopiene bare til å gjenopprette etter en feil og til å teste at gjenopprettingen virker.</li>
   <li><strong>Invitasjonskoder</strong> gjelder i 24 timer. En kode slettes 7 dager etter at den har utløpt eller er brukt, eller tidligere hvis babyen slettes eller omsorgspersonen som opprettet den, sletter kontoen sin.</li>
   <li><strong>Registreringen av samtykket ditt</strong> lagres så lenge kontoen din finnes, og slettes sammen med den.</li>
   <li><strong>Tekniske logger</strong> over forespørsler til serverne våre slettes automatisk av Supabase, aldri senere enn 90 dager etter at de ble laget.</li>
@@ -205,7 +206,7 @@
 <p>Du har også rett til å klage til den islandske tilsynsmyndigheten for personvern, <strong>Persónuvernd</strong>: Laugavegur 166, 105 Reykjavík, Island; <a href="mailto:postur@personuvernd.is">postur@personuvernd.is</a>; telefon +354 510 9600; <a href="https://www.personuvernd.is">www.personuvernd.is</a>. Bor du i Norge, kan du også klage til <strong>Datatilsynet</strong>: Postboks 458 Sentrum, 0105 Oslo; telefon 22 39 69 00; <a href="https://www.datatilsynet.no">www.datatilsynet.no</a>. Bor du et annet sted i EØS, kan du også klage til tilsynsmyndigheten der. Vi setter pris på å få muligheten til å løse saken sammen med deg først.</p>
 
 <h2>Sikkerhet</h2>
-<p>Alle forbindelser mellom appen og serverne våre er kryptert (HTTPS). Opplysninger på serverne våre er kryptert ved lagring hos driftsleverandøren vår. Tilgangsregler i databasen gjør at hver konto bare kan lese og endre de babyene den er omsorgsperson for. På telefonen din er appens data beskyttet av iOS-databeskyttelse når telefonen er låst. Hvis det skjer et brudd på personopplysningssikkerheten som sannsynligvis innebærer en risiko for deg, melder vi fra til Persónuvernd innen 72 timer etter at vi ble kjent med det, og gir deg beskjed dersom risikoen er høy.</p>
+<p>Alle forbindelser mellom appen og serverne våre er kryptert (HTTPS). Opplysninger på serverne våre er kryptert ved lagring hos driftsleverandøren vår. Sikkerhetskopier krypteres før de lagres, med en nøkkel bare vi har. Tilgangsregler i databasen gjør at hver konto bare kan lese og endre de babyene den er omsorgsperson for. På telefonen din er appens data beskyttet av iOS-databeskyttelse når telefonen er låst. Hvis det skjer et brudd på personopplysningssikkerheten som sannsynligvis innebærer en risiko for deg, melder vi fra til Persónuvernd innen 72 timer etter at vi ble kjent med det, og gir deg beskjed dersom risikoen er høy.</p>
 
 <h2>Barns personvern</h2>
 <p>Barnið er ikke rettet mot barn og er ikke ment å brukes av barn. Det er et verktøy for voksne til å registrere opplysninger om omsorgen for et barn de har ansvar for, og opplysningene om barnet legges inn og styres av barnets omsorgspersoner. Vi samler ikke bevisst inn opplysninger direkte fra barn.</p>
