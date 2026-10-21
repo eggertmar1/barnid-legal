@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["9Q72GZ796C.is.barnid.Barnid"],
+        "components": [
+          { "/": "/j/*", "comment": "Invite link: /j/<CODE>" },
+          { "/": "/join/*", "comment": "Invite link (long form)" }
+        ]
+      }
+    ]
+  }
+}

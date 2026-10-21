@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="is">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Barnið – Boð frá maka</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="apple-itunes-app" content="app-id=6806393802">
+<style>
+  :root { color-scheme: light dark; --bg:#FAF8F5; --ink:#1F1F22; --muted:#6F6C68; --honey:#D8BC8E; --brown:#7A5A2A; --tile:#ffffff; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#151413; --ink:#F2EEE8; --muted:#A8A29A; --tile:#24221F; --brown:#D8BC8E; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.5; }
+  main { max-width:460px; margin:0 auto; padding:56px 20px 64px; text-align:center; }
+  h1 { font-size:26px; line-height:1.2; margin:0 0 10px; text-wrap:balance; }
+  p { color:var(--muted); margin:0 0 22px; }
+  .code { display:flex; justify-content:center; gap:8px; margin:6px 0 26px; }
+  .code span { width:46px; height:58px; display:grid; place-items:center; background:var(--tile); border:2px solid var(--honey); border-radius:12px; font-size:28px; font-weight:700; letter-spacing:0; }
+  .btn { display:inline-block; background:var(--honey); color:#1F1F22; text-decoration:none; font-weight:700; padding:15px 28px; border-radius:999px; font-size:17px; }
+  .how { margin-top:28px; font-size:15px; }
+  .bad { color:var(--brown); }
+</style>
+</head>
+<body>
+<main>
+  <h1 id="t">Maki þinn bauð þér í Barnið</h1>
+  <p id="s">Þið sjáið þá bæði hverja gjöf, hvern lúr og hverja bleyju, hvort í sínum síma.</p>
+  <div class="code" id="code" aria-label=""></div>
+  <a class="btn" id="get" href="https://apps.apple.com/app/id6806393802">Sækja Barnið</a>
+  <p class="how" id="how">Opnaðu svo hlekkinn aftur, eða veldu „Ert þú með boðskóða frá maka?“ og sláðu inn kóðann.</p>
+</main>
+<script>
+(function () {
+  var T = {
+    is: { t: "Maki þinn bauð þér í Barnið", s: "Þið sjáið þá bæði hverja gjöf, hvern lúr og hverja bleyju, hvort í sínum síma.", get: "Sækja Barnið", how: "Opnaðu svo hlekkinn aftur, eða veldu „Ert þú með boðskóða frá maka?“ og sláðu inn kóðann.", bad: "Þessi hlekkur er ekki gildur. Biddu maka þinn um að senda nýjan.", code: "Boðskóði" },
+    nb: { t: "Partneren din har invitert deg til Barnið", s: "Da ser dere begge hvert måltid, hver lur og hver bleie, hver på sin telefon.", get: "Last ned Barnið", how: "Åpne lenken igjen etterpå, eller velg «Har du en invitasjonskode fra partneren?» og skriv inn koden.", bad: "Denne lenken er ikke gyldig. Be partneren din sende en ny.", code: "Invitasjonskode" },
+    en: { t: "Your partner invited you to Barnið", s: "You'll both see every feed, nap and nappy, each on your own phone.", get: "Get Barnið", how: "Then open the link again, or choose “Have an invite code from a partner?” and enter the code.", bad: "This link isn't valid. Ask your partner to send a new one.", code: "Invite code" }
+  };
+  var langs = (navigator.languages || [navigator.language || "is"]).map(function (l) { return l.toLowerCase(); });
+  var lang = "is";
+  for (var i = 0; i < langs.length; i++) {
+    var l = langs[i];
+    if (l.indexOf("is") === 0) { lang = "is"; break; }
+    if (l.indexOf("nb") === 0 || l.indexOf("no") === 0 || l.indexOf("nn") === 0) { lang = "nb"; break; }
+    if (l.indexOf("en") === 0) { lang = "en"; break; }
+  }
+  var L = T[lang]; document.documentElement.lang = lang === "nb" ? "nb" : lang;
+  var m = location.pathname.match(/^\/(?:j|join)\/([A-Za-z0-9]{6})\/?$/);
+  var code = m ? m[1].toUpperCase() : null;
+  document.getElementById("t").textContent = L.t;
+  document.getElementById("get").textContent = L.get;
+  var box = document.getElementById("code");
+  if (code) {
+    document.getElementById("s").textContent = L.s;
+    document.getElementById("how").textContent = L.how;
+    box.setAttribute("aria-label", L.code + ": " + code.split("").join(" "));
+    code.split("").forEach(function (c) { var s = document.createElement("span"); s.textContent = c; s.setAttribute("aria-hidden", "true"); box.appendChild(s); });
+  } else {
+    var s = document.getElementById("s"); s.textContent = L.bad; s.className = "bad";
+    document.getElementById("how").remove();
+  }
+})();
+</script>
+</body>
+</html>
