@@ -65,5 +65,31 @@
       "source": "/join/:code",
       "destination": "/j.html"
     }
+  ],
+  "redirects": [
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "utm_source",
+          "value": "meta"
+        }
+      ],
+      "destination": "/nb.html",
+      "permanent": false
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "header",
+          "key": "x-vercel-ip-country",
+          "value": "NO"
+        }
+      ],
+      "destination": "/nb.html",
+      "permanent": false
+    }
   ]
 }
